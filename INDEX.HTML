@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منظم الرحلات</title>
+  <style>
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #005f73;
+    }
+    .section {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 20px 0;
+      padding: 20px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .checkbox-list {
+      margin-top: 10px;
+    }
+    .checkbox-list div {
+      margin-bottom: 10px;
+    }
+    .logo {
+      display: inline-block;
+      margin-left: 10px;
+    }
+    .submit-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #008891;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .submit-button:hover {
+      background-color: #006f7a;
+    }
+  </style>
+</head>
+<body>
+  <h1>منظم مهام الرحلات</h1>
+
+  <div class="section">
+    <h2>معلومات الرحلة</h2>
+    <label>اسم الرحلة:</label>
+    <input type="text" placeholder="رحلة الشلة">
+
+    <label>تاريخ الرحلة:</label>
+    <input type="text" placeholder="مثال: 10 ذو الحجة">
+
+    <label>مدة بقاء الصفحة مفتوحة (أيام):</label>
+    <input type="number" min="1" max="7">
+  </div>
+
+  <div class="section">
+    <h2>الأقسام الرئيسية</h2>
+
+    <div class="checkbox-list">
+      <h3>🍰 قسم الحلا</h3>
+      <div><input type="checkbox"> تحمل الحلا؟ <input type="text" placeholder="اكتب نوع الحلا (مثال: كيك تمر)"></div>
+
+      <h3>🥟 قسم الفطاير</h3>
+      <div><input type="checkbox"> تحمل الفطاير؟ <input type="text" placeholder="اكتب نوع الفطاير (مثال: سبانخ)"></div>
+
+      <h3>🍽️ وجبة الفطور</h3>
+      <div><input type="checkbox"> تحمل وجبة الفطور؟ <input type="text" placeholder="مثال: بيض وجبن وفول"></div>
+
+      <h3>🍽️ وجبة الغداء</h3>
+      <div><input type="checkbox"> تحمل وجبة الغداء؟ <input type="text" placeholder="مثال: رز ودجاج"></div>
+
+      <h3>🍽️ وجبة العشاء</h3>
+      <div><input type="checkbox"> تحمل وجبة العشاء؟ <input type="text" placeholder="مثال: شاورما أو كبسة"></div>
+
+      <h3>🥗 المقبلات</h3>
+      <div><input type="checkbox"> تحمل المقبلات؟ <input type="text" placeholder="مثال: حمص، سلطة"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>☕ المشروبات الساخنة</h2>
+    <div class="checkbox-list">
+      <div><input type="checkbox"> قهوة عربية</div>
+      <div><input type="checkbox"> شاي</div>
+      <div><input type="checkbox"> كرك</div>
+      <div><input type="checkbox"> زنجبيل</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🧃 المشروبات الباردة</h2>
+    <div class="checkbox-list">
+      <div><input type="checkbox"> ماء</div>
+      <div><input type="checkbox"> عصير</div>
+      <div><input type="checkbox"> مشروبات غازية</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🍽️ أدوات الرحلة</h2>
+    <div class="checkbox-list">
+      <div><input type="checkbox"> صحون</div>
+      <div><input type="checkbox"> فناجيل</div>
+      <div><input type="checkbox"> كاسات</div>
+      <div><input type="checkbox"> ملاعق وشوك</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>➕ أضف غرض خاص</h2>
+    <label>اسم الغرض:</label>
+    <input type="text" placeholder="مثال: مبخرة، تمر فاخر">
+  </div>
+
+  <button class="submit-button">حفظ وتوليد رابط المشاركة</button>
+</body>
+</html>
